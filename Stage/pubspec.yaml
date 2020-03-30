@@ -1,0 +1,24 @@
+name: Stage
+description: Flutter youtube player
+version: 6.1.0+5
+
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player:
+  webview_media: ">=0.1.1 <1.0.0"
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^4.1.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
