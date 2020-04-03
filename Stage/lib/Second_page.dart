@@ -88,11 +88,124 @@ class _Second_PageState extends State<Second_Page> {
     super.dispose();
   }
 
+  _showDrawer() {
+    showModalBottomSheet(
+        context: context,
+        builder: (context) {
+          return Container(
+            color: Colors.black87,
+            child: ListView(
+              children: [
+                Row(
+
+            children: <Widget>[
+                     Padding(
+                      padding: const EdgeInsets.only(left: 10.0),
+                      child: Container(
+                        decoration: new BoxDecoration(
+                          //  color: Colors.black,
+                            borderRadius: new BorderRadius.all(
+                              Radius.circular(10.0),
+                            )),
+                        width: 150.0,
+                        height: 350.0,
+
+                        child:Column(
+
+                          children: <Widget>[
+
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+
+                                decoration: new BoxDecoration(
+                                  // color: Colors.black,
+                                    image: new DecorationImage(
+                                      image: new AssetImage("assets/AOS.png"),
+                                      fit: BoxFit.fill,
+                                    ),
+                                    borderRadius: new BorderRadius.all(
+                                      Radius.circular(10.0),
+                                    )),
+                                width: 60.0,
+                                height: 60.0,
+                              ),
+                            ),
+                            Container(
+
+                              decoration: new BoxDecoration(
+                                  color: Colors.deepPurple,
+
+                                  borderRadius: new BorderRadius.all(
+                                    Radius.circular(10.0),
+                                  )),
+                              width: 150.0,
+                              height: 200.0,
+
+                              child: Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8.0),
+                                    child: Text('Vishwas',
+                                        style:
+                                        TextStyle(color: Colors.white, fontSize: 16.0)),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(bottom: 8.0),
+                                    child: Text('Bhiwani',
+                                        style:
+                                        TextStyle(color: Colors.white70, fontSize: 14.0)),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 8.0,left:10.0,right:10.0),
+                                    child: Text('"Vishwas Chauhan Great Indian Laughter '
+                                        'Challange 2017 main hissa le chuke hain."',
+                                        style:
+                                        TextStyle(color: Colors.white70, fontSize: 15.0)),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+
+
+
+
+
+                          ],
+                        ),),
+
+                    ),
+
+                  ],
+
+                    ),
+
+
+              ],
+            ),
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          height: 50.0,
+          child: Row(
+            children: <Widget>[
+              IconButton(
+                icon: Icon(Icons.arrow_drop_up),
+                onPressed: _showDrawer,
+              )
+            ],
+          ),
+        ),
+      ),
       body: Container(
         color: Colors.black54,
 
