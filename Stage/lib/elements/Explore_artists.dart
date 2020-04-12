@@ -112,7 +112,7 @@ class _Explore_artistsState extends State<Explore_artists> {
                                     borderRadius: new BorderRadius.all(
                                       Radius.circular(10.0),
                                     )),
-                                height: 360.0,
+                                height: 370.0,
                                 width: 180.0,
 
                                 child:Column(
@@ -123,13 +123,13 @@ class _Explore_artistsState extends State<Explore_artists> {
                                       decoration: new BoxDecoration(
                                           color: Colors.black,
                                           image: new DecorationImage(
-                                            image: new AssetImage("assets/SC.jpg"),
+                                            image: new AssetImage("assets/FA1.jpg"),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius: new BorderRadius.all(
                                             Radius.circular(10.0),
                                           )),
-                                      height: 290.0,
+                                      height: 310.0,
                                       width: 180.0,
                                     ),
 
@@ -192,7 +192,7 @@ class _Explore_artistsState extends State<Explore_artists> {
                                           decoration: new BoxDecoration(
                                               color: Colors.black,
                                               image: new DecorationImage(
-                                                image: new AssetImage("assets/SC.jpg"),
+                                                image: new AssetImage("assets/FA2.jpg"),
                                                 fit: BoxFit.fill,
                                               ),
                                               borderRadius: new BorderRadius.all(
@@ -259,7 +259,7 @@ class _Explore_artistsState extends State<Explore_artists> {
                                             decoration: new BoxDecoration(
                                                 color: Colors.black,
                                                 image: new DecorationImage(
-                                                  image: new AssetImage("assets/SC.jpg"),
+                                                  image: new AssetImage("assets/FA3.jpg"),
                                                   fit: BoxFit.fill,
                                                 ),
                                                 borderRadius: new BorderRadius.all(

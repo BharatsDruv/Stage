@@ -1,4 +1,5 @@
 import 'package:Stage/elements/Explore_artists.dart';
+import 'package:Stage/elements/Featured_artists.dart';
 import 'package:flutter/material.dart';
 import 'elements/Bottom_navigation_bar.dart';
 import 'elements/Exclusive_shows.dart';
@@ -26,7 +27,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-// Video controller
 
 
   @override
@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Stage_collection(),
               Artist_on_stage(),
               Explore_artists(),
+              Featured_artists(),
               Bottom_navigation_bar(),
             ],
           ),
