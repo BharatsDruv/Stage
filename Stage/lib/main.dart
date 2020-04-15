@@ -1,3 +1,4 @@
+import 'package:Stage/More.dart';
 import 'package:Stage/elements/Explore_artists.dart';
 import 'package:Stage/elements/Featured_artists.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home:
+      MyHomePage(),
     );
   }
 }
@@ -35,7 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey,
       resizeToAvoidBottomPadding: false,
 
-      body: SingleChildScrollView(
+      body:
+      SingleChildScrollView(
         child: Container(
           child: new Column(
             children: <Widget>[
