@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'elements/Bottom_navigation_bar.dart';
 
 
 void main() {
@@ -25,11 +24,14 @@ class YoutubePlayerDemoApp extends StatelessWidget {
 
 /// Homepage
 class More_Page extends StatefulWidget {
+
   @override
   _More_PageState createState() => _More_PageState();
 }
 
 class _More_PageState extends State<More_Page> {
+  List<Color> _colors = [Colors.black12, Colors.black];
+
 
   @override
   void initState() {
@@ -48,6 +50,11 @@ class _More_PageState extends State<More_Page> {
           padding: const EdgeInsets.only(top: 0.0),
           child: Container(
             decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: _colors,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
                 color: Colors.black87,
                 borderRadius: BorderRadius.all(
                   Radius.circular(10.0),
@@ -69,7 +76,11 @@ class _More_PageState extends State<More_Page> {
                 //Container 1
                 Container(
                   decoration:  BoxDecoration(
-                      color: Colors.black87,
+                      gradient: LinearGradient(
+                        colors: _colors,
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
                       borderRadius: BorderRadius.all(
                         Radius.circular(10.0),
                       ))
@@ -130,7 +141,11 @@ class _More_PageState extends State<More_Page> {
                 //Container 2
                 Container(
                   decoration:  BoxDecoration(
-                      color: Colors.black87,
+                      gradient: LinearGradient(
+                        colors: _colors,
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
                       borderRadius: BorderRadius.all(
                         Radius.circular(10.0),
                       ))
@@ -209,7 +224,12 @@ class _More_PageState extends State<More_Page> {
                 InkWell(
                   child: Container(
                     decoration:  BoxDecoration(
-                        color: Colors.black87,
+                        gradient: LinearGradient(
+                          colors: _colors,
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+
+                        ),
                         borderRadius: BorderRadius.all(
                           Radius.circular(10.0),
                         ))
@@ -247,8 +267,7 @@ class _More_PageState extends State<More_Page> {
                     _showDialog();
                   },
                 ),
-                Spacer(),
-                Bottom_navigation_bar(),
+
               ],
 
             ),
